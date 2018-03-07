@@ -6,7 +6,15 @@ const ora = require('ora');
 const currencies = require('../lib/currencies.json');
 
 const API = 'https://api.fixer.io/latest';
-
+/**
+ * Return the converted monney
+ * @param {object} configuration - Configuration of the convertion
+ * @param {int} configuration.amount - The amount you want to convert
+ * @param {string} configuration.to - The currency you want
+ * @param {string} configuration.from - The currency of the amount
+ * @param {json} configuration.response - The response of the api
+ * @param {json} configuration.loading
+ */
 const convert = configuration => {
   const {amount, to, from, response, loading} = configuration;
 
@@ -34,6 +42,11 @@ const convert = configuration => {
   process.exit(1);
 };
 
+/**
+ *
+ * @param command
+ * @returns {Promise<void>}
+ */
 const cash = async command => {
   const amount = command.amount;
   const from = command.from.toUpperCase();
