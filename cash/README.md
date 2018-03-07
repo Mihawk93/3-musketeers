@@ -26,7 +26,7 @@ node bin/index.js 100 eur usd php pln myr
 
 You can also save the currency as default currency by adding "-s".
 ```
-node bin/index.js 100 eur -s
+node bin/index.js -s
 ```
 
 If you want to display help message just had "-h".
