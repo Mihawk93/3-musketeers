@@ -1,6 +1,6 @@
 # Cash
 
-The Cash library is used to convert any amount in US Dollar, Pound Sterling, Polish Zloty, Euro.
+The Cash library is used to convert any amount in 32 currencies. (To see all the currencies: http://akep.us/currencies)
 
 ## Prerequisites
 
@@ -11,10 +11,15 @@ or install all the libraries using ``` npm install ```
 
 ## How it works
 
-You have to run the index.js with the node command and then indicate the amount and the currency.
-Exemple:
+You have to run the index.js with the node command and then indicate the amount and the currency that you want and the currency expected.
+Examplemple:
 ```
-node index.js 100 eur
+node bin/index.js 100 eur usd
+```
+
+You can also put various currencies.
+```
+node bin/index.js 100 eur usd php pln myr
 ```
 
 ## What else?
