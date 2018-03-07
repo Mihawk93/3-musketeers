@@ -12,7 +12,7 @@ or install all the libraries using ``` npm install ```
 ## How it works
 
 You have to run the index.js with the node command and then indicate the amount and the currency that you want and the currency expected.
-Examplemple:
+Example:
 ```
 node bin/index.js 100 eur usd
 ```
@@ -26,17 +26,17 @@ node bin/index.js 100 eur usd php pln myr
 
 You can also save the currency as default currency by adding "-s".
 ```
-node index.js 100 eur -s
+node bin/index.js 100 eur -s
 ```
 
 If you want to display help message just had "-h".
 ```
-node index.js -h
+node bin/index.js -h
 ```
 
 To display the version add "-v".
 ```
-node index.js -v
+node bin/index.js -v
 ```
 
 
