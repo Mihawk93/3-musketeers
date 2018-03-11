@@ -11,5 +11,11 @@
 		"money": "^0.2.0",
 		"ora": "^2.0.0",
 		"update-notifier": "^2.3.0"
+	},
+	"scripts": {
+		"test": "jest"
+	},
+	"devDependencies": {
+		"jest": "^22.4.2"
 	}
 }
